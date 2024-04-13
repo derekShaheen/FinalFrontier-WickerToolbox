@@ -4,8 +4,8 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <AssemblyVersion>1.1.1.0</AssemblyVersion>
-    <FileVersion>1.1.1.0s</FileVersion>
+    <AssemblyVersion>1.0.6.0</AssemblyVersion>
+    <FileVersion>1.0.6.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -24,11 +24,29 @@
     <Reference Include="MelonLoader">
       <HintPath>A:\Games\Steam\steamapps\common\Farthest Frontier\MelonLoader\net6\MelonLoader.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>A:\Games\Steam\steamapps\common\Farthest Frontier\MelonLoader\Il2CppAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>A:\Games\Steam\steamapps\common\Farthest Frontier\MelonLoader\Il2CppAssemblies\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>A:\Games\Steam\steamapps\common\Farthest Frontier\MelonLoader\Il2CppAssemblies\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>A:\Games\Steam\steamapps\common\Farthest Frontier\MelonLoader\Il2CppAssemblies\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>A:\Games\Steam\steamapps\common\Farthest Frontier\MelonLoader\Il2CppAssemblies\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>A:\Games\Steam\steamapps\common\Farthest Frontier\MelonLoader\Il2CppAssemblies\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>A:\Games\Steam\steamapps\common\Farthest Frontier\MelonLoader\Il2CppAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
     <Reference Include="WickerREST">
-      <HintPath>..\..\RESTConsole\bin\Release\net6.0\WickerREST.dll</HintPath>
+      <HintPath>..\..\WickerREST\bin\Release\net6.0\WickerREST.dll</HintPath>
     </Reference>
   </ItemGroup>
 

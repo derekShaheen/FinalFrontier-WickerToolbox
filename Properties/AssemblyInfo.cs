@@ -1,5 +1,5 @@
-﻿using RevealMapREST;
+﻿using WickerToolbox;
 using MelonLoader;
 
-[assembly: MelonInfo(typeof(RevealMapREST.RevealMapREST), "RevealMapREST", "1.0.0", "Skrip")]
+[assembly: MelonInfo(typeof(WickerToolbox.ToolboxREST), WickerToolbox.BuildInfo.Name, WickerToolbox.BuildInfo.Version, WickerToolbox.BuildInfo.Author)]
 [assembly: MelonGame("Crate Entertainment", "Farthest Frontier")]
