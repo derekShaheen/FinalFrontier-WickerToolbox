@@ -13,7 +13,7 @@ namespace WickerToolbox
         public const string Name = "WickerToolbox";
         public const string Description = "Toolbox for Farthest Frontier using REST";
         public const string Author = "Skrip";
-        public const string Version = "1.0.6";
+        public const string Version = "1.0.7";
         public const string DownloadLink = "";
     }
 
@@ -356,6 +356,50 @@ namespace WickerToolbox
 
         //        Cube.GetComponent<Renderer>().material.color = nodeColor; // Apply the color to the cube
         //    }
+
+        public class FreeCamMovement : MonoBehaviour
+        {
+            public float speed = 5.0f;
+            public float fastSpeedMultiplier = 3.0f;
+
+            void Update()
+            {
+                float actualSpeed = speed;
+                if (Input.GetKey(KeyCode.LeftShift))
+                {
+                    actualSpeed *= fastSpeedMultiplier;
+                }
+
+                if (Input.GetKey(KeyCode.W))
+                {
+                    transform.Translate(Vector3.forward * actualSpeed * Time.deltaTime);
+                }
+                if (Input.GetKey(KeyCode.S))
+                {
+                    transform.Translate(Vector3.back * actualSpeed * Time.deltaTime);
+                }
+                if (Input.GetKey(KeyCode.A))
+                {
+                    transform.Translate(Vector3.left * actualSpeed * Time.deltaTime);
+                }
+                if (Input.GetKey(KeyCode.D))
+                {
+                    transform.Translate(Vector3.right * actualSpeed * Time.deltaTime);
+                }
+                if (Input.GetKey(KeyCode.Space))
+                {
+                    transform.Translate(Vector3.up * actualSpeed * Time.deltaTime);
+                }
+                if (Input.GetKey(KeyCode.LeftControl))
+                {
+                    transform.Translate(Vector3.down * actualSpeed * Time.deltaTime);
+                }
+
+                float mouseX = Input.GetAxis("Mouse X");
+                float mouseY = Input.GetAxis("Mouse Y");
+                transform.eulerAngles += new Vector3(-mouseY, mouseX, 0);
+            }
+        }
     }
 
 }
